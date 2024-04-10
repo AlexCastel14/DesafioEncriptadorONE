@@ -1,0 +1,153 @@
+.inter-tight{
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+.AluraLogo{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 151px);
+    width: 100%;
+}
+
+.inputTextForm{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputContainer{
+    margin: 16% 10% 16%;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+textarea{
+    width: 80%;
+    background: none;
+    border: none;
+    resize: none;
+}
+
+.btn{
+    width: 328px;
+    height: 67px;
+    border: #0A3871;
+    border-radius: 24px;
+}
+
+#encryptbtn{
+    background-color: #0A3871;
+    color: white;
+}
+
+#decryptbtn{
+    background-color: #D8DFE8;
+}
+
+.outputResult{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 90%;
+    margin-top: 40px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 32px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #0A3871;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width:768px) {
+    body{
+        background-color: red;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+    }
+
+    .inputTextForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .inputContainer{
+        margin: 10% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .button-container{
+        width: 70%;
+    }
+
+    .btn{
+        width: 80%;
+    }
+
+    .outputResult{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 80%;
+        height: 90%;
+        background-color: white;
+        border-radius: 32px;
+        overflow: hidden;
+    }
+
+    .outputResult > svg {
+        display: none;
+    }
+
+}
+
+@media (max-width:375px) {
+    body{
+        background-color: blue;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
